@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(4, 4, 138) 35%, rgb(22, 64, 72) 100%);
+    /* overflow: hidden; */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:10%;
+    flex-direction: column;
+}
+.btns {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.7rem;
+    
+}
+
+.btns button{
+    color: black;
+    width: 10vw;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 22vh;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 0.6rem;
+    border: 2px solid black;
+}
+.btns button:hover{
+    background:rgb(195, 228, 235);
+}
+#restart {
+    margin:2rem 0;
+}
+#restart button{
+    font-size: 1rem;
+    width: 5rem;
+    height: 3rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#restart button:hover {
+    background-color: rgb(19, 18, 16);
+}
+
+.pop-up {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #00cae0, #5b54da);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+.hide {
+    display: none;
+}
+#getbtn{
+    font-size: 1rem;
+    width: 7rem;
+    height: 3rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.me {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+ @media screen and (max-width:1500px) {
+   .btns {
+       grid-gap: 1.5rem;
+    }
+    .container {
+     position: absolute;
+    top:20%;
+
+   }
+   .btns button {
+    width: 10vw;
+    height: 15vh;
+   }
+}
+
+@media screen and (max-width:1300px) {
+   .btns {
+       grid-gap: 1rem;
+    }
+    .container {
+     position: absolute;
+     top:20%;
+
+   }
+   .btns button {
+    width: 10vw;
+    height: 17vh;
+   }
+   #restart {
+     margin-top: 2rem;
+   }
+   #restart button {
+     width: 7rem;
+     height: 3rem;
+   }
+}
+@media screen and (max-width:850px) {
+   .btns {
+       grid-gap: 0.8rem;
+    }
+   .btns button {
+    width: 16vw;
+    height: 17vh;
+   }
+   
+   #restart button {
+     width: 7rem;
+     height: 3rem;
+   }
+}
+@media screen and (max-width:500px) {
+   .btns {
+       grid-gap: 0.8rem;
+    }
+   .btns button {
+    width: 18vw;
+    height: 16vh;
+   }
+   
+}
+@media screen and (max-width:420px) {
+   .btns {
+       grid-gap: 0.8rem;
+    }
+   .btns button {
+    width: 25vw;
+    height: 12vh;
+   }
+   
+}
+@media screen and (max-width:350px) {
+   .btns {
+       grid-gap: 0.6rem;
+    }
+   .btns button {
+    width: 25vw;
+    height: 15vh;
+   }
+   
+}
